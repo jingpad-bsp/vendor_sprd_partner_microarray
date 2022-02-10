@@ -1,0 +1,2 @@
+allow engpc teetz_device:chr_file {open ioctl read write};
+allow engpc madev_fp_device:chr_file { read write ioctl open };

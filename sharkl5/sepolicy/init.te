@@ -1,0 +1,4 @@
+#add for microarray fingerprint
+allow init ma_data_file:dir {create_file_perms};
+allow init ma_data_file:file{create_file_perms};
+allow init madev_fp_device:chr_file { getattr read write ioctl open };

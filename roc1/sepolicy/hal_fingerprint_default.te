@@ -1,0 +1,13 @@
+# madev hal_fingerprint_default
+allow hal_fingerprint_default teetz_device:chr_file { open read write ioctl };
+allow hal_fingerprint_default madev_fp_device:chr_file { read write ioctl open map };
+#allow hal_fingerprint_default madev_fp_device:chr_file {create_file_perms};
+
+#madev hal_fingerprint_default data file
+#allow ma_data_file labeledfs:filesystem associate;
+#file_type_auto_trans(hal_fingerprint_default, system_data_file, ma_data_file);
+#allow hal_fingerprint_default ma_data_file:file create_file_perms;
+#allow hal_fingerprint_default self:capability {dac_override dac_read_search};
+allow hal_fingerprint_default device:file {create_file_perms};
+
+

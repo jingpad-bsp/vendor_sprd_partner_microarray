@@ -1,0 +1,6 @@
+#add for microarray fingerprint
+/dev/madev0         u:object_r:madev_fp_device:s0
+
+#add for microarray fingerprint
+#/data/system/ma_fingerprint/* u:object_r:ma_data_file:s0
+

@@ -1,0 +1,2 @@
+allow hal_fingerprintmmi_default madev_fp_device:chr_file { read write open ioctl };
+
